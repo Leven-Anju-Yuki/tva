@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculateur de TVA</title>
+        <!-- Balises Meta SEO -->
+        <meta
+            name="description"
+            content="Utilisez notre calculateur de TVA pour déterminer rapidement le prix avec ou sans TVA, ainsi que le montant de la TVA. Simple et efficace."
+        />
+        <meta
+            name="keywords"
+            content="calculateur TVA, prix avec TVA, prix sans TVA, taux de TVA, calcul TVA"
+        />
+        <meta name="author" content="Calculateur de TVA" />
+
+        <!-- Balises Meta Open Graph (OG) pour les réseaux sociaux -->
+        <meta property="og:title" content="Calculateur de TVA" />
+        <meta
+            property="og:description"
+            content="Calculez facilement le montant de la TVA, le prix avec ou sans TVA grâce à notre outil en ligne."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://leven-anju-yuki.github.io/tva/index.html" />
+        <meta
+            property="og:image"
+            content="https://leven-anju-yuki.github.io/tva/assets/img/favicon.png"
+        />
+        <meta property="og:site_name" content="Calculateur de TVA" />
+
+        <!-- Favicon pour les navigateurs de bureau et mobiles -->
+        <link id="favicon" rel="icon" href="./assets/img/favicon.png" type="image/png" />
+
+        <!-- Fichier manifest pour les applications web progressives -->
+        <link rel="manifest" href="manifest.json" />
+
+        <!-- Fichiers CSS pour le style du site -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="container col-12 col-lg-4">
+                <h1>Calculateur de TVA</h1>
+                <label for="priceWithTax">Prix avec TVA (€):</label>
+                <input type="number" id="priceWithTax" placeholder="Entrez le prix avec TVA" />
+
+                <label for="priceWithoutTax">Prix sans TVA (€):</label>
+                <input type="number" id="priceWithoutTax" placeholder="Entrez le prix sans TVA" />
+
+                <label for="taxRate">Pourcentage de TVA (%):</label>
+                <input type="number" id="taxRate" placeholder="Entrez le pourcentage de TVA" />
+
+                <button onclick="calculate()">Calculer</button>
+
+                <h2>Résultats :</h2>
+                <div class="results">
+                    <p id="result"></p>
+                </div>
+            </div>
+            <div class="container col-12 col-lg-4">
+                <h2>Historique des calculs</h2>
+                <ul id="history"></ul>
+            </div>
+            <p>
+                Si vous voulez calculer les promotions pour des articles
+                <a href="https://leven-anju-yuki.github.io/promotion/"
+                    >site pour calculer les promos</a
+                >.
+            </p>
+        </div>
+
+        <footer><p>&copy; 2024 Mon site web pour calculer la TVA</p></footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/instal.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

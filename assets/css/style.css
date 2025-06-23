@@ -1,0 +1,134 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Arrière-plan coloré avec dégradé doux */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+/* TITRES SPÉCIAUX */
+h1, h2 {
+    text-align: center;
+    color: #5c3d2e; /* brun foncé élégant */
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* h1 spécifique pour plus d’impact */
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a {
+    color: #ff5e62 !important; /* couleur de lien douce */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* h2 plus doux mais cohérent */
+h2 {
+    font-size: 1.8rem;
+}
+
+/* Conteneur principal centré */
+.main-container {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Bloc de chaque carte (calculateur / historique) */
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* Titre */
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #fda085;
+    outline: none;
+}
+
+/* Bouton stylé */
+button {
+    margin-top: 15px !important;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7b39;
+}
+
+/* Résultat et historique */
+.result,
+.history-content {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Footer toujours en bas, centré */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px;
+}
