@@ -1,6 +1,6 @@
 {
-  "name": "Cours de japonais",
-  "short_name": "Japonais",
+  "name": "Application de calcul de tva",
+  "short_name": "TVA",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",

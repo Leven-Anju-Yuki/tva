@@ -1,4 +1,5 @@
 let history = [];
+const taxRate = parseFloat(document.getElementById('taxRate').value);
 
 // Cette fonction calcule et affiche le prix avec TVA, le prix sans TVA ou le taux de TVA
 // en fonction des valeurs saisies par l'utilisateur. Elle met également à jour le résultat et l'historique.

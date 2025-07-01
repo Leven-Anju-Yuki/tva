@@ -40,26 +40,37 @@
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     </head>
     <body>
-        <div class="row"> <center>
-            <button
-                class="btn-install ml-2"
-                id="installButton"
-                style="display: none"
-            >
-                Installer
-            </button>
-        </center>
+        <div class="row">
+            <center>
+                <button class="btn-install ml-2" id="installButton" style="display: none">
+                    Installer
+                </button>
+            </center>
             <div class="container col-12 col-lg-4">
                 <h1>Calculateur de TVA</h1>
                 <label for="priceWithTax">Prix avec TVA (€):</label>
                 <input type="number" id="priceWithTax" placeholder="Entrez le prix avec TVA" />
 
-                <label for="priceWithoutTax">Prix sans TVA (€):</label>
+                <label for="priceWithoutTax">Prix HT (€):</label>
                 <input type="number" id="priceWithoutTax" placeholder="Entrez le prix sans TVA" />
 
-                <label for="taxRate">Pourcentage de TVA (%):</label>
-                <input type="number" id="taxRate" placeholder="Entrez le pourcentage de TVA" />
-
+                <label for="taxRate">Pourcentage de TVA :</label>
+                <select id="taxRate">
+                    <option value="20">
+                        20% - Taux normal (la majorité des biens et services)
+                    </option>
+                    <option value="10">
+                        10% - Taux intermédiaire (restauration, transports, travaux d’amélioration
+                        du logement)
+                    </option>
+                    <option value="5.5">
+                        5,5% - Taux réduit (produits alimentaires, équipements pour personnes
+                        handicapées, livres, etc.)
+                    </option>
+                    <option value="2.1">
+                        2,1% - Taux super réduit (médicaments remboursés, presse, etc.)
+                    </option>
+                </select>
                 <button onclick="calculate()">Calculer</button>
 
                 <h2>Résultats :</h2>

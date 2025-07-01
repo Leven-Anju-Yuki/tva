@@ -12,18 +12,19 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 30px;
 }
 
 /* TITRES SPÉCIAUX */
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: #5c3d2e; /* brun foncé élégant */
     font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* h1 spécifique pour plus d’impact */
@@ -46,7 +47,6 @@ h2 {
 
 /* Conteneur principal centré */
 .main-container {
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,21 +77,37 @@ h2 {
     text-align: center;
 }
 
-/* Champs de saisie */
-input {
+/* Applique un style uniforme aux input et select */
+input[type="number"],
+input[type="text"],
+select {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    padding: 10px;
+    border: none;
     border-radius: 10px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
+    background-color: #fff8e1;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
-input:focus {
-    border-color: #fda085;
+/* Au focus : effet visuel doux */
+input:focus,
+select:focus {
     outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.4);
+}
+
+/* Personnalisation spécifique du select */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='gray' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14l-4.796-5.481c-.566-.647-.106-1.659.753-1.659h9.592c.86 0 1.32 1.012.753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    cursor: pointer;
 }
 
 /* Bouton stylé */
